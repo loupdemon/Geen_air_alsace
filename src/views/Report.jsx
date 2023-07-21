@@ -155,6 +155,10 @@ const Report= () => {
 
     return (
       <Stack>
+      <div className="col-md-12 col-12 mx-auto">
+                        <h1 className="text-center main-heading">Explore</h1>
+                        <p className="text-center sub-heading">Sensor data</p>
+      </div>
         <div className="container ">
           <div className="weather-side">
             <div className="weather-gradient" />

@@ -1,0 +1,96 @@
+.menu-tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .main-heading {
+  color: #5d4037;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.gallery .item-inside {
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0.2rem 0.3rem 1rem #777;
+  transition: all 0.3s ease-in-out;
+}
+.gallery .item-inside:hover,
+.gallery .item-inside:hover img {
+  box-shadow: 0rem 0rem 0.5rem #777;
+}
+.gallery .item-inside:hover h1{
+  transform: translateX(10px);
+}
+.gallery .item-inside:hover .btn {
+  transform: translateX(-10px);
+}
+
+.gallery .img-div {
+  padding: 0;
+}
+
+.gallery img {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery .img-fluid {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery .main-title h1 {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery .price-book-divide h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #4db6ac;
+}
+
+.gallery .price-book-divide {
+  margin-bottom: 10px;
+}
+
+.gallery .row {
+  margin-right: 0;
+  margin-left: 0px;
+}
+
+.gallery .btn-primary {
+  background-color: #4db6ac;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery .btn-primary:hover {
+  background-color: #00695c;
+  outline: none;
+  border: none;
+}
+
+.gallery .btn-warning:hover {
+  background-color: black;
+  color: whitesmoke;
+  outline: none;
+}
+@media screen and (max-width: 1024px) {
+  .gallery img{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 12px;
+  }
+}

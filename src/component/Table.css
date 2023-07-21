@@ -1,0 +1,35 @@
+/* DataTable.css */
+.data-table {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.table-container {
+    max-height: 300px; /* Hauteur maximale de la table avec défilement */
+    overflow-y: auto; /* Activation du défilement vertical */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    z-index: 1;
+}

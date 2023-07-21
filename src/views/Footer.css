@@ -1,0 +1,40 @@
+.footer {
+  background-image: linear-gradient(
+    to right top,
+    #094b65,
+    #06566f,
+    #036179,
+    #006c83,
+    #00778c
+  );
+  margin-top: auto;
+  font-family: "Rubik", sans-serif;
+}
+.footer h5 {
+  letter-spacing: 0.2rem;
+  /* font-family: "Kaushan Script", cursive; */
+  font-family: "Rubik", sans-serif;
+  text-shadow: 0.2rem 0.3rem 0.5rem #111;
+}
+.footer p,
+.footer li,
+.footer a {
+  font-family: "Quicksand", sans-serif;
+}
+.footer strong {
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #ddd;
+  text-shadow: 0.2rem 0.3rem 0.5rem #000;
+}
+.footer .MuiAvatar-img,
+.navbar .MuiAvatar-img {
+  height: 80% !important;
+  object-fit: contain !important;
+}
+.footer .MuiAvatar-root,
+.navbar .MuiAvatar-root {
+  width: 50px !important;
+  height: 50px !important;
+}

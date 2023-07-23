@@ -1,5 +1,5 @@
 
-/////////////////////////////////////
+// /////////////////////////////////////
 import React, { useEffect, useState } from 'react';
 import './Report.css';
 import mqtt from 'mqtt';
@@ -244,3 +244,72 @@ const Report= () => {
 };
 
 export default Report;
+// App.js
+// MainComponent.js
+// import React, { useEffect, useState } from "react";
+// import TemperatureChart from "../component/TemperatureChart";
+// import HumidityChart from "../components/HumidityChart";
+// import MqttDataGrid from "../components/MqttDataGrid";
+// import PMChart from "../components/PMChart";
+
+// const Report = () => {
+//   const [data, setData] = useState([]);
+
+//   // Simulate receiving data from WebSocket every 5 seconds
+//   useEffect(() => {
+//     const simulateWebSocketData = () => {
+//       const timestamp = new Date().toLocaleString();
+//       const temperature = Math.random() * (30 - 20) + 20;
+//       const humidity = Math.random() * (80 - 60) + 60;
+//       const pm1_0 = Math.random() * (50 - 10) + 10;
+//       const pm2_5 = Math.random() * (100 - 20) + 20;
+//       const pm10 = Math.random() * (150 - 30) + 30;
+
+//       const newData = {
+//         timestamp,
+//         temperature,
+//         humidity,
+//         pm1_0,
+//         pm2_5,
+//         pm10,
+//       };
+//       setData((prevData) => [...prevData, newData]);
+//     };
+
+//     const intervalId = setInterval(simulateWebSocketData, 5000);
+
+//     return () => {
+//       clearInterval(intervalId);
+//     };
+//   }, []);
+
+//   return (
+//     <div>
+//       <h1>Environmental Data</h1>
+//       <div>
+//         <h2>Temperature Chart</h2>
+//         <TemperatureChart data={data} />
+//       </div>
+//       <div>
+//         <h2>Humidity Chart</h2>
+//         <HumidityChart data={data} />
+//       </div>
+//       <div>
+//         <h2>PM1.0 Chart</h2>
+//         <PMChart data={data} dataKey="pm1_0" />
+//       </div>
+//       <div>
+//         <h2>PM2.5 Chart</h2>
+//         <PMChart data={data} dataKey="pm2_5" />
+//       </div>
+//       <div>
+//         <h2>PM10 Chart</h2>
+//         <PMChart data={data} dataKey="pm10" />
+//       </div>
+//       <div>
+//         <h2>MQTT Data Table</h2>
+//         <MqttDataGrid data={data} />
+//       </div>
+//     </div>
+//   );
+// };
